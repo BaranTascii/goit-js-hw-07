@@ -4,11 +4,340 @@
 
 body {
   margin: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
 }
+
+/* task-1 başladı */
+
+#categories {
+  width: 440px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  list-style: none;
+}
+
+#categories .item {
+  background: #f6f6fe;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+  border: none;
+}
+
+#categories .item:last-child {
+  margin-bottom: 0;
+}
+
+#categories h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin: 0 0 16px 0;
+}
+
+#categories ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#categories li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  background: #f6f6fe;
+  border: 2px solid #808080;
+  transition: border-color 0.2s;
+}
+
+#categories li:hover {
+  border-color: #2e2f42;
+}
+
+#categories li:last-child {
+  margin-bottom: 0;
+}
+
+/* task-1 bitti */
+
+/* task-2 başladı */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  justify-content: flex-start;
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.gallery li {
+  flex: 0 1 360px;
+  box-sizing: border-box;
+  margin-right: 24px;
+  margin-bottom: 48px;
+}
+
+.gallery li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.gallery img {
+  display: block;
+  width: 360px;
+  height: 300px;
+}
+
+/* task-2 bitti */
+
+/* task-3 başladı */
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+#name-input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  width: 360px;
+  height: 40px;
+  border-color: #808080;
+  border-radius: 4px;
+}
+
+/* task-3 bitti */
+
+/* task-4 başladı */
+
+.login-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 24px;
+  width: 408px;
+  height: 256px;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+  width: 360px;
+  height: 72px;
+}
+
+.login-form input {
+  width: 300px;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.login-form input:hover {
+  border-color: #000;
+}
+
+.login-form input:focus {
+  border-color: #808080;
+}
+
+.login-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 8px;
+  width: 86px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  background: #4e75ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.login-form button:hover {
+  background: #6c8cff;
+}
+
+/* task-4 bitti */
+
+/* task-5 başladı */
+
+.widget {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 100px 88px;
+  width: 345px;
+  height: 280px;
+  background: #fff;
+}
+
+.widget p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin: 0 0 16px 0;
+}
+
+
+.change-color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row; 
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  background: #4e75ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+/* task-5 bitti */
+
+/* task-6 başladı */
+
+#controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+#controls input[type="number"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 150px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  text-align: center;
+}
+
+#controls input[type="number"]:focus {
+  border-color: #808080;
+}
+
+#controls [data-create] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background: #4e75ff;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#controls [data-destroy] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 10px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  background: #ff4e4e;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#controls [data-destroy]:hover {
+  background: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 44px;
+  align-items: flex-end;
+  margin-top: 16px;
+}
+/* task-6 bitti */

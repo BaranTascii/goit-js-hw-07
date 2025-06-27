@@ -9,7 +9,7 @@ const colorSpan = document.querySelector('.color');
 const body = document.body;
 
 changeColorBtn.addEventListener('click', () => {
-  const newColor = getRandomHexColor(); // Rastgele hex renk al
-  body.style.backgroundColor = newColor; // <body> arka plan rengini değiştir
-  colorSpan.textContent = newColor; // <span class="color"> içine aynı rengi yaz
+  const newColor = getRandomHexColor();
+  body.style.backgroundColor = newColor;
+  colorSpan.textContent = newColor;
 });
